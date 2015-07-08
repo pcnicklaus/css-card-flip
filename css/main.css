@@ -1,1 +1,16 @@
 /* add your styles here */
+.primary {
+    position: absolute;
+    z-index: -1;
+}
+
+.secondary {
+    opacity: 0;
+    -webkit-transition: opacity 2s; /* Safari */
+   transition: opacity 2s;
+
+}
+
+.secondary:hover {
+    opacity: 1;
+}
