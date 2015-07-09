@@ -2,24 +2,18 @@
 .primary {
     position: absolute;
     z-index: -1;
+    transition: transform 0.2s;
 }
 
 .secondary {
     opacity: 0;
-    -webkit-transition: opacity 2s;
+    transform: rotateY(-180deg);
     transition: opacity 2s;
+    transition: transform 0.2s;
 }
 
 .secondary:hover {
     opacity: 1;
-}
-
-.primary, .secondary {
-      transition: transform 0.2s;
-}
-
-.secondary {
-      transform: rotateY(-180deg);
 }
 
 .portfolio-item:hover .primary {
