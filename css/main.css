@@ -6,11 +6,26 @@
 
 .secondary {
     opacity: 0;
-    -webkit-transition: opacity 2s; /* Safari */
-   transition: opacity 2s;
-
+    -webkit-transition: opacity 2s;
+    transition: opacity 2s;
 }
 
 .secondary:hover {
     opacity: 1;
+}
+
+.primary, .secondary {
+      transition: transform 0.2s;
+}
+
+.secondary {
+      transform: rotateY(-180deg);
+}
+
+.portfolio-item:hover .primary {
+      transform: rotateY(-180deg);
+}
+
+.portfolio-item:hover .secondary {
+      transform: rotateY(0);
 }
